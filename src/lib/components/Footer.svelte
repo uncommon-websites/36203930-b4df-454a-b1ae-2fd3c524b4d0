@@ -4,7 +4,7 @@
   </div>
 
   <div class="text-center mb-24">
-    <h1 class="text-[10vw] leading-none font-bold tracking-tighter text-black">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl leading-none font-bold tracking-tighter text-black">
       YOUR UK AMAZON PARTNER.
     </h1>
   </div>
