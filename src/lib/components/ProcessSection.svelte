@@ -3,31 +3,31 @@
 
   const steps = [
     {
-      id: "discover",
-      title: "Discover Novel Opportunities",
-      text: "The right problem is the one worth solving. We quickly uncover actionable opportunities through data and business insights, ensuring that every discovery is grounded in what matters most for your business and your users.",
-      tags: ["Business & Market Research", "Data Driven Insights", "UX Audits", "Customer Journey Mapping", "Brand Perception Analysis", "Technical Assessment"],
+      id: "assess",
+      title: "Assess Your UK Opportunity",
+      text: "We start by analyzing your current Amazon US performance, product portfolio, and UK market potential. Our team evaluates regulatory requirements, competitive landscape, and identifies the fastest path to compliant, profitable growth in the UK market.",
+      tags: ["Market Analysis", "Regulatory Assessment", "Competitor Research", "Product Viability", "Pricing Strategy", "Growth Forecasting"],
       graphic: "lines"
     },
     {
-      id: "envision",
-      title: "Envision Innovative Strategies",
-      text: "Great strategies don't just come from ideas—they come from clear, actionable plans. We create pragmatic roadmaps that balance ambition with feasibility, focusing on what will drive immediate and long-term impact for both business and users.",
-      tags: ["CX & Product Strategy", "Vision & Roadmapping", "Value Proposition Design", "Northstar Metric Framework", "Brand Strategy & Positioning", "Technical Solution Design"],
+      id: "prepare",
+      title: "Prepare for Market Entry",
+      text: "We handle all the complexity of UK market entry. From MHRA compliance and product registration to catalog clean-up and removing rogue sellers, we ensure your brand is retail-ready and fully compliant before launch.",
+      tags: ["MHRA Compliance", "Product Registration", "Labeling Requirements", "Catalog Clean-Up", "Brand Protection", "Account Setup"],
       graphic: "curve"
     },
     {
-      id: "build",
-      title: "Build Engaging Touchpoints",
-      text: "We turn strategy into action—fast and efficiently. Whether designing intuitive interfaces, visual identities, or building scalable platforms, we focus on building holistic experiences that are both joyful and effective.",
-      tags: ["UX & UI Design", "Information Architecture", "App & Web Design", "Design Systems", "Content Strategy", "Agile Software Engineering"],
+      id: "launch",
+      title: "Launch with Optimized Listings",
+      text: "We create data-driven product listings, A+ content, and brand stores that convert UK customers. Our team handles keyword research, competitive positioning, and all content creation to maximize visibility and sales from day one.",
+      tags: ["Listing Optimization", "Keyword Research", "A+ Content", "Brand Store Design", "Product Photography", "SEO Strategy"],
       graphic: "circle-top"
     },
     {
-      id: "elevate",
-      title: "Elevate Delivery Capabilities",
-      text: "We make sure teams can deliver better outcomes, faster. By evolving collaborative workflows, upskilling teams, and implementing the right tools, we help you scale with confidence and consistency.",
-      tags: ["AI Consulting", "QA & Delivery", "Process Optimization", "Performance Analytics", "Continuous Improvement", "Change Management"],
+      id: "grow",
+      title: "Grow Through Performance Marketing",
+      text: "We drive profitable growth through continuous optimization. Our team manages advertising campaigns, inventory planning, customer reviews, and performance analytics—constantly refining the approach to maximize your ROI and market share.",
+      tags: ["Amazon Advertising", "Campaign Management", "Performance Analytics", "Inventory Planning", "Review Management", "Continuous Optimization"],
       graphic: "circle-waves"
     }
   ];
@@ -63,7 +63,7 @@
   });
 </script>
 
-<section class="bg-[#1a1a40] text-white py-24 px-6 md:px-12 relative" bind:this={sectionRef}>
+<section class="bg-black text-white py-24 px-6 md:px-12 relative" bind:this={sectionRef}>
   <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-12">
     
     <!-- Sticky Navigation -->
@@ -71,7 +71,7 @@
       <div class="space-y-8">
         {#each steps as step, i}
           <div class="transition-opacity duration-500 {i === activeStep ? 'opacity-100' : 'opacity-30'}">
-            <p class="text-xl md:text-2xl font-light mb-1">People work with us to</p>
+            <p class="text-xl md:text-2xl font-light mb-1">We help you</p>
             <h2 class="text-2xl md:text-3xl font-bold">{step.title}</h2>
           </div>
         {/each}
