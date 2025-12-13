@@ -18,7 +18,7 @@
   ];
 </script>
 
-<section class="py-24 px-6 md:px-12 bg-white">
+<section id="why-us" class="py-24 px-6 md:px-12 bg-white scroll-mt-24">
   <div class="max-w-2xl mb-16">
     <p class="text-xl md:text-2xl leading-relaxed text-gray-800">
       We're not a traditional agency or marketplace consultant. We buy your inventory, run your entire UK channel, and only make money when we successfully sell your products. Full alignment, zero risk.

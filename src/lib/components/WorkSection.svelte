@@ -53,7 +53,7 @@
   ];
 </script>
 
-<section class="px-6 md:px-12 py-24 bg-white">
+<section id="services" class="px-6 md:px-12 py-24 bg-white scroll-mt-24">
   <div class="max-w-3xl mb-16">
     <h2 class="text-2xl md:text-3xl font-medium leading-tight">
       <span class="font-bold">We handle everything from <span class="text-primary-600">compliance to conversion</span>,</span> so you can unlock the UK market without adding headcount or navigating complex regulations on your own.

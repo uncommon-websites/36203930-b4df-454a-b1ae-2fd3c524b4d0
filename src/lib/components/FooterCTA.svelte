@@ -1,4 +1,4 @@
-<section class="px-6 md:px-12 pb-24 bg-white">
+<section id="contact" class="px-6 md:px-12 pb-24 bg-white scroll-mt-24">
   <div class="rounded-2xl overflow-hidden relative bg-gradient-to-br from-black to-gray-700 text-white p-8 md:p-16 min-h-[500px] flex flex-col justify-between">
     <!-- Background overlay/image could go here -->
     
