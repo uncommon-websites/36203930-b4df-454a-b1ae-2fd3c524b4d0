@@ -91,7 +91,7 @@
         </button>
       </div>
       <div class="w-24 h-24 rounded-lg overflow-hidden bg-gray-200 shrink-0">
-        <img src="/generated/image-professional-uk-based-ecommerce-speciali-1765613416087-5.webp" alt="Craig" class="w-full h-full object-cover" />
+        <img src="/uploaded/1765616340685-h8ibxgq.jpg" alt="Craig" class="w-full h-full object-cover" />
       </div>
     </div>
   </div>
