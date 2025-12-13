@@ -1,19 +1,23 @@
 <script lang="ts">
+  import IconUsers from "~icons/lucide/users";
+  import IconShieldCheck from "~icons/lucide/shield-check";
+  import IconTrendingUp from "~icons/lucide/trending-up";
+
   const benefits = [
     {
       title: "No Internal Headcount",
       desc: "Get a complete UK Amazon team without hiring, training, or managing employees. We handle everything from compliance to customer service.",
-      img: "/generated/image-diverse-team-of-ecommerce-professionals--1765613653423-0.webp"
+      icon: IconUsers
     },
     {
       title: "Zero Upfront Risk",
       desc: "We buy your inventory and only make money when products sell. No retainers, no consulting fees—just aligned incentives and shared success.",
-      img: "/generated/image-handshake-between-business-partners-with-1765613655707-1.webp"
+      icon: IconTrendingUp
     },
     {
       title: "Regulatory Expertise",
       desc: "Navigate UK supplement regulations with confidence. We handle MHRA compliance, labeling, and all the complex paperwork so you stay compliant.",
-      img: "/generated/image-professional-reviewing-uk-regulatory-com-1765613657923-2.webp"
+      icon: IconShieldCheck
     }
   ];
 </script>
@@ -29,8 +33,8 @@
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     {#each benefits as benefit}
       <div>
-        <div class="aspect-[3/4] rounded-lg overflow-hidden mb-4 bg-gray-100">
-          <img src={benefit.img} alt={benefit.title} class="w-full h-full object-cover" />
+        <div class="w-16 h-16 rounded-lg bg-gray-50 flex items-center justify-center mb-4">
+          <svelte:component this={benefit.icon} class="w-8 h-8 text-gray-900" />
         </div>
         <h4 class="text-xs font-bold mb-1">{benefit.title}</h4>
         <p class="text-[10px] text-gray-500 leading-relaxed">{benefit.desc}</p>
