@@ -25,8 +25,8 @@
       </h1>
     </div>
 
-    <div class="pb-24 flex flex-wrap gap-8 md:gap-16 items-center">
-      <div class="text-xs text-gray-500 font-medium uppercase tracking-wider">Specializing in</div>
+    <div class="pb-24 flex flex-wrap gap-4 md:gap-16 items-center">
+      <div class="text-xs text-gray-500 font-medium uppercase tracking-wider w-full md:w-auto">Specializing in</div>
       {#each categories as category}
         <div class="h-8 flex items-center justify-center font-medium text-sm text-gray-400">{category}</div>
       {/each}
