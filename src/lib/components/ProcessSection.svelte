@@ -63,8 +63,8 @@
   });
 </script>
 
-<section id="approach" class="bg-black text-white py-24 px-6 md:px-12 relative scroll-mt-24" bind:this={sectionRef}>
-  <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-12">
+<section id="approach" class="bg-black text-white relative scroll-mt-24" bind:this={sectionRef}>
+  <div class="max-w-[1600px] mx-auto px-6 md:px-12 py-24 flex flex-col md:flex-row gap-12">
     
     <!-- Sticky Navigation -->
     <div class="md:w-1/2 md:h-[calc(100vh-6rem)] md:sticky md:top-24 flex flex-col justify-center">

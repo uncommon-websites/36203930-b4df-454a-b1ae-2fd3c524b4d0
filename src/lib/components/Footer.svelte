@@ -1,28 +1,24 @@
-<footer class="bg-white px-6 md:px-12 pb-32 pt-12">
-  <div class="mb-8 md:mb-0">
-    <h2 class="text-2xl font-bold tracking-tighter">eVolume</h2>
-  </div>
+<footer id="site-footer" class="bg-gray-50">
+  <div class="max-w-[1600px] mx-auto px-6 md:px-12 pb-16 pt-32">
+  <div class="flex flex-col gap-16">
+    <div class="flex flex-col">
+      <h2 class="text-2xl font-bold tracking-tighter mb-4 text-gray-900">eVolume</h2>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl leading-[0.9] font-bold tracking-tighter text-black uppercase italic">
+        Your UK<br />Amazon Partner.
+      </h1>
+    </div>
 
-  <div class="text-center mb-24">
-    <h1 class="text-4xl md:text-5xl lg:text-6xl leading-none font-bold tracking-tighter text-black">
-      YOUR UK AMAZON PARTNER.
-    </h1>
-  </div>
-
-  <div class="flex justify-center">
-    <div class="grid grid-cols-2 gap-x-12 gap-y-8 text-[10px] uppercase tracking-wide text-gray-500">
-      <div class="flex flex-col gap-2">
-        <a href="#" class="hover:text-black">LinkedIn</a>
-        <a href="#" class="hover:text-black">Contact</a>
+    <div class="flex flex-col md:flex-row md:justify-between md:items-end gap-8 pt-8 border-t border-gray-200">
+      <div class="flex gap-8 text-xs uppercase tracking-wide text-gray-500">
+        <a href="#" class="hover:text-black transition-colors">LinkedIn</a>
+        <a href="#" class="hover:text-black transition-colors">Contact</a>
+        <a href="#" class="hover:text-black transition-colors">Privacy</a>
+        <a href="#" class="hover:text-black transition-colors">Terms</a>
       </div>
-      <div class="flex flex-col gap-2">
-        <a href="#" class="hover:text-black">Privacy</a>
-        <a href="#" class="hover:text-black">Terms</a>
-      </div>
-      <div class="col-span-2">
-        <p>© 2024 eVolume</p>
-        <p>All Rights Reserved.</p>
+      <div class="text-xs uppercase tracking-wide text-gray-400">
+        <p>© 2024 eVolume · All Rights Reserved.</p>
       </div>
     </div>
+  </div>
   </div>
 </footer>

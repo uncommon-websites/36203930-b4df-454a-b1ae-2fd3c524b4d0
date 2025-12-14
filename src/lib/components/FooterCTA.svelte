@@ -70,30 +70,39 @@
 
 <svelte:window onkeydown={handleKeydown} />
 
-<section id="contact" class="px-6 md:px-12 pb-24 bg-white scroll-mt-24">
-  <div class="rounded-2xl overflow-hidden relative bg-gradient-to-br from-black to-gray-700 text-white p-8 md:p-16 min-h-[500px] flex flex-col justify-between">
-    <!-- Background overlay/image could go here -->
-    
-    <div>
-      <h2 class="text-2xl md:text-3xl font-bold mb-2">Ready to unlock the <span class="text-primary-400">UK market</span>?</h2>
-      <h2 class="text-2xl md:text-3xl font-bold">Let's discuss your Amazon UK opportunity.</h2>
+<section id="contact" class="bg-black scroll-mt-24">
+  <div class="max-w-[1600px] mx-auto px-6 md:px-12 py-32">
+  <div class="max-w-3xl mx-auto text-center">
+    <!-- Eyebrow -->
+    <div class="inline-flex items-center gap-2 mb-6">
+      <span class="w-1.5 h-1.5 bg-primary-500 rounded-full animate-pulse"></span>
+      <span class="text-xs uppercase tracking-wider text-gray-500 font-medium">Available for new partners</span>
     </div>
 
-    <div class="bg-white text-black rounded-xl p-6 md:p-8 max-w-md self-end w-full flex items-center gap-6">
-      <div class="flex-1">
-        <h3 class="font-bold text-lg">Craig</h3>
-        <p class="text-xs text-gray-500 mb-6">Company Director</p>
-        <button 
-          onclick={openModal}
-          class="bg-primary-600 text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wide hover:bg-primary-700 transition-colors"
-        >
-          Get in touch
-        </button>
-      </div>
-      <div class="w-24 h-24 rounded-lg overflow-hidden bg-gray-200 shrink-0">
-        <img src="/uploaded/1765616340685-h8ibxgq.jpg" alt="Craig" class="w-full h-full object-cover" />
+    <!-- Main headline -->
+    <h2 class="text-4xl md:text-5xl lg:text-6xl font-medium leading-[1.1] tracking-tight text-white mb-8">
+      Ready to unlock the<br /><span class="text-primary-400">UK market</span>?
+    </h2>
+
+    <!-- CTA row -->
+    <div class="inline-flex flex-col sm:flex-row items-center gap-6">
+      <button
+        onclick={openModal}
+        class="bg-white text-black px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
+      >
+        Get in touch
+      </button>
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full overflow-hidden bg-gray-800 shrink-0">
+          <img src="/uploaded/1765616340685-h8ibxgq.jpg" alt="Craig" class="w-full h-full object-cover" />
+        </div>
+        <div class="text-left">
+          <p class="text-white text-sm font-medium">Talk to Craig</p>
+          <p class="text-gray-500 text-xs">Company Director</p>
+        </div>
       </div>
     </div>
+  </div>
   </div>
 </section>
 
