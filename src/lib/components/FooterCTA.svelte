@@ -50,21 +50,34 @@
   
   async function handleSubmit(e: Event) {
     e.preventDefault();
-    
+
     isSubmitting = true;
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    console.log('Form submitted:', { name, email, message });
-    
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: 'f3143083-6997-49df-b8b3-da514a59b75d',
+          to: 'k@krish.sh',
+          name,
+          email,
+          message
+        })
+      });
+
+      isSubmitted = response.ok;
+    } catch {
+      isSubmitted = false;
+    }
+
     isSubmitting = false;
-    isSubmitted = true;
-    
-    // Close modal after success message
-    setTimeout(() => {
-      closeModal();
-    }, 2000);
+
+    if (isSubmitted) {
+      setTimeout(() => {
+        closeModal();
+      }, 2000);
+    }
   }
 </script>
 
