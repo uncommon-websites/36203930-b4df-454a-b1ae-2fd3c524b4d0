@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+
   const cards = [
     {
       title: "We Don't Just Advise...",
@@ -16,6 +18,29 @@
       image: "/generated/supplements.png"
     }
   ];
+
+  let cardRefs: HTMLElement[] = [];
+  let visibleCards = $state<boolean[]>([false, false, false]);
+
+  onMount(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = cardRefs.indexOf(entry.target as HTMLElement);
+          if (index !== -1 && entry.isIntersecting) {
+            visibleCards[index] = true;
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    cardRefs.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  });
 </script>
 
 <section class="bg-white">
@@ -28,9 +53,13 @@
 
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
     {#each cards as card, i}
-      <div class="group">
+      <div class="group" bind:this={cardRefs[i]}>
         <div class="aspect-[4/3] overflow-hidden rounded mb-6 bg-gray-100">
-          <img src={card.image} alt={card.title} class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+          <img
+            src={card.image}
+            alt={card.title}
+            class="w-full h-full object-cover transition-all duration-500 {visibleCards[i] ? 'grayscale-0' : 'grayscale'} md:grayscale md:group-hover:grayscale-0"
+          />
         </div>
         <p class="text-base text-gray-400 mb-1">{card.title}</p>
         <h3 class="text-lg md:text-xl font-medium text-gray-900">{card.subtitle}</h3>

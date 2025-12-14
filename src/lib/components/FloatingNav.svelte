@@ -76,7 +76,7 @@
 </script>
 
 <div
-  class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 bg-white/90 backdrop-blur-md border border-gray-200 rounded-full px-6 py-3 shadow-lg flex gap-6 text-xs font-medium text-gray-500 transition-all duration-300"
+  class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 bg-white/90 backdrop-blur-md border border-gray-200 rounded-full px-4 md:px-6 py-3 shadow-lg flex gap-4 md:gap-6 text-[13px] font-medium text-gray-500 transition-all duration-300 whitespace-nowrap"
   class:opacity-0={!isVisible}
   class:pointer-events-none={!isVisible}
   class:translate-y-4={!isVisible}
