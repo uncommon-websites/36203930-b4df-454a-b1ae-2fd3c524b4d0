@@ -7,7 +7,7 @@
     "Wellness",
     "Vitamins",
     "Sports Nutrition",
-    "Natural Health"
+    "Technical Hardware"
   ];
 </script>
 
@@ -21,7 +21,7 @@
   <div class="relative z-10 max-w-[1600px] mx-auto w-full px-6 md:px-12">
     <div class="max-w-4xl mb-12 pt-40">
       <h1 class="text-3xl md:text-5xl font-medium leading-[1.15] tracking-tight text-white">
-        We run your entire <span class="text-primary-400">Amazon UK channel</span> end-to-end. <span class="text-gray-400">From compliance and catalog clean-up to listings, advertising and ongoing management—so you can focus on building your brand.</span>
+        We run your entire <span class="text-primary-400">Amazon channel</span> end-to-end. <span class="text-gray-400">From compliance and catalog clean-up to listings, advertising and ongoing management so you can focus on building your brand.</span>
       </h1>
     </div>
 
