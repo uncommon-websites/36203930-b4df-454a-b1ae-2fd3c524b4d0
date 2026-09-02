@@ -1,6 +1,6 @@
 <!-- DO NOT EDIT - Managed by todo_list tool -->
-<!-- Updated: 2026-09-02T10:37:06.693Z -->
+<!-- Updated: 2026-09-02T10:39:02.913Z -->
 
 # Current Todo List State
 
-- [x] Remove 'UK' from Hero heading text
+- [x] Change Hero text to Technical Hardware
